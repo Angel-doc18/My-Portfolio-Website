@@ -1,0 +1,174 @@
+body{
+    background-color: rgba(0, 0, 0, 0.733);
+    margin: 20px auto;
+    overflow: auto;
+}
+/*Style for homepgae*/
+.Homepage{
+width: 1000px;
+height: 550px;
+margin-left: 200px;
+margin-top:10px;
+background-image: url(background\ \(2\).jpg);
+background-repeat: no-repeat;
+background-size: contain;
+position: relative;
+background-color: rgb(0, 0, 0);
+}
+.Homepage::before{
+    background-image: url(background\ \(2\).jpg);
+    background-size: contain;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+    color: rgb(0, 0, 0);
+}
+h2{
+    text-align: justify;
+    color: white;
+    padding-top: 100px;
+    margin-left: 100px;
+  
+}
+#pic{
+    width: 370px;
+    margin-left: 600px;
+    margin-top: -500px;
+    border: none;
+    border-radius: 200px;
+    background-color: rgba(49, 46, 46, 0.664);
+}
+button{
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
+  background-color: rgb(79, 156, 89);
+  color: white;
+  margin-top: 50px;
+  border: none;
+  border-radius: 5px;
+}
+button:hover{
+    background-color: green;
+}
+/*Styling the modal button*/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    margin-left: 200px;
+    top: 10px;
+    height: 500px;
+    width: 500px;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0 15px 20px 0 rgb(0, 0, 0.2), 0 17px 25px 0 rgb(0, 0, 0.17);
+}
+
+#p1{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.closeBtn{
+    color: black;
+    float: right;
+    font-size: 30px;
+}
+.closeBtn:hover,.closeBtn:focus{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*Style for About me page*/
+.about{
+background-color: azure;
+width: 1000px;
+height: 500px;
+margin-left: 200px;
+margin-top: -20px;
+
+}
+h1{
+    text-align: center;
+    color: green;
+    padding-top: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+    color: green;
+    text-align: center;
+    margin-right: 50px;
+}
+p{
+    text-align: justify;
+    color: white;
+    margin-left: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px;
+}
+.Me{
+   display: flex;
+    flex-direction: row;
+    text-align: justify;
+     margin-top: 70px;
+}
+.Education{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: white;
+     margin-left: 20px;
+}
+#edu{
+    width: 50px;
+    margin-left: 100px;
+    margin-bottom: -20px;
+    margin-top: -15px;
+    align-items: center;
+}
+.Hobies{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    margin-left: 20px;  
+}
+#hobby{
+     width: 50px;
+    margin-left: 100px;
+    margin-bottom: -20px;
+    margin-top: -15px;
+    align-items: center;  
+}
+.Skills{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    margin-left: 20px;  
+}
+#skills{
+  width: 50px;
+    margin-left: 100px;
+    margin-bottom: -20px;
+    margin-top: -15px;
+    align-items: center;  
+}
+/*Style for footer*/
+.Footer{
+    width: 1000px;
+    background-color: rgb(138, 245, 138);
+    height: 100px;
+    margin-left: 200px; 
+    margin-top: -50px; 
+}
+#icon1{
+    margin-left: 40px;
+    width: 50px;
+}
+#icon2
+{
+    margin-top: 20px;
+ margin-left: 60px;
+    width: 30px;
+}
