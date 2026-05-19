@@ -6,73 +6,149 @@
     <title>My portfolio Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>  
+<body> 
+<nav class="menu-bar">
+    <a href="#home">Home</a>
+    <a href="#aboutMe2">About</a>
+    <a href="#tech-used">Technologies Used</a>  
+    <a href="#contact">Visit sites</a>  
+</nav> 
+
+
     <!--The home page-->
-<div class="Homepage">
-<h2>Hi, I'm Christangel Ma-arrey ojong,<br>A Tech Enthusiast</h2><br>
-<p>I'm a Medical Laboratory Sciences student who is passionate for full stack development.
-<br>I have been priviledged to attend STEM  for girls and computer classes
-<br> where I was taught basic programming languages like: HTML, CSS and C programming
-</p>
-<a href="#aboutMe2"><button>Go to About Me</button></a>
-<!--Creating a modal for a button-->
-<button id="modalBtn" class="button" >Technologies Used</button>
+    <div class="Home-page" id="home">
+      <header class="header">
+         <span><b>Christangel</b></span>
+      </header>
+      <h2>Hi,  I'm<div class="color-swatch" data-color="#f87171" style="color:green">Christangel,</div>
+      <br>Tech Enthusiast</h2><br>
+      <p>I'm a Medical Laboratory Sciences student who is passionate for full stack development.
+       <br>I have been priviledged to attend STEM  for girls and computer classes
+       <br> where I was taught basic programming languages like: HTML, CSS and C programming
+      </p>
+<!--Download CV button-->
+<a href="file:///C:/Users/Ebenezer/Desktop/My%20cv.pdf" download="My_CV.pdf">
+  <button type="button">Download my CV</button>
+</a>
+
+<!--Creating a modal for let's chat-->
+<button id="modalBtn" onclick="openModal()" >Contact me</button>
+
+<!--image for home page-->
+<div class="home-img">
+<img src="Me.png" alt="icon" id="pic">
+</div>
+<!--modal form-->
 <div id="simpleModal" class="modal">
-<span class="closeBtn">&times;</span> 
-<p id="p1"><b>Technologies used to Create this portfolio</b>
- <ul>
- <li>HTML</li><img src="html.png" alt="html" width="100px">
- <li>CSS</li><img src="css.png" alt="html" width="100px">
- <li>JavaScript</li><img src="js.png" alt="html" width="100px">
- <li>Remove.bg</li>           
- </ul>   
-</p>     
+<div class="form-group">
+  <span class="closeBtn" onclick="closeModal()" id="close">&times;</span> 
+  <h1 id="chat">Send your message here</h1>
+  <div class="box-form" id="messageForm">
+    <form onsubmit="sendEmail(); return false;">
+
+       <!--form for name-->
+        <label for="Name">Enter Full Name:</label><br>
+        <input type="text" placeholder="e.g. Collins" autocomplete="off" id="formName" width="500px" class="form-name" required/><br><br>
+
+        <!--form for email-->
+         <label for="email">Enter Email:</label><br>
+         <input type="email" placeholder="e.g. ojongchristangel@gmail.com" autocomplete="off" id="formEmail" class="form-name" required/><br><br>
+        
+         <!--form for telephone-->
+         <label for="phone">Enter your Phone Number:</label><br>
+        <input type="tel" placeholder="e.g. +237 687 439 546" autocomplete="off" id="formPhone" class="form-name" required/><br><br>
+        
+        <!--form for message-->
+          <label for="message">Enter your Message:</label><br><br>
+        <textarea name="message" placeholder="Type your message here..."  autocomplete="off" id="formArea" class="form-name" required></textarea><br>
+        </form>
+      </div>
+      <button id="submitBtn" class="submitbutton" >Submit</button>
+</div>      
 </div>
-<!--Insertion of my portfolio picture-->
-<img src="Me.png" alt="MyPic" id="pic">
 </div>
-<div class="about" id="aboutMe2">
+
 <!--About Me webpage-->
+<div class="about" id="aboutMe2">
 <h1>About Me</h1>
 <div class="Me">
 <div class="Education">
+
 <h3>Education</h3> 
 <img src="edu.png" alt="edu" id="edu">   
-<p> I am currently a level 100 student studying at Ebenezer Higher Institute of Science and Technology,
-<br> Nkongsamba III, Cameroon.<br></p>
+    <p> I am a highschool graduate in level 100 studying at Ebenezer Higher Institute of Science and Technology,
+    <br> Nkongsamba III, Cameroon.<br></p>
  </div>
+
  <div class="Hobies">
  <h3>Hobbies</h3>
  <img src="hobbies .png" alt="hobby" id="hobby"> 
- <ul>
-<li>Dancing</li>
-<li>Reading books and novels</li>
-<li>Watching movies</li>
-<li>Listening to music</li>
-<li>Studying</li>
- </ul>  
+   <ul>
+      <li>Dancing</li>
+      <li>Reading books and novels</li>
+      <li>Watching movies</li>
+      <li>Listening to music</li>
+      <li>Studying</li>
+    </ul>  
  </div>
- <div class="Skills">    
-<h3>Skills</h3>
-<img src="skills.png" alt="skills" id="skills">
-<ul>
-<li>Computer literacy</li>
-<li>Using Microsoft applications</li>
-<li>Some programming languages like: <br> Javascript, HTML, CSS</li>
-<li>Use of some technologies like: Renderforest and Corel draw</li>
-</ul>
-</div>
- </div>
-</div>
-<!--Footer of the website, where email and telephone contact are found--> 
-<footer class="Footer">
-<p>For more information or any inquiries,<br>
-Contact me using this Tell: <u><b>+237 682 327 473</b></u> or visit the platforms below<br>
-<a href="https://medium.com/@ojongchristangel"><img src="medium.png" alt="icon"  id="icon1"></a> 
-<a href="https://github.com/Angel-doc18/Registration-Form"><img src="github.png" alt="icon"  id="icon2"> </a>
-<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><img src="email.png" alt="icon"  id="icon2"></a>
-</footer>  
-<script src="main.js"></script> 
-</body>
 
+ <div class="Skills">    
+    <h3>Skills</h3>
+    <img src="skills.png" alt="skills" id="skills">
+    <p>
+    <ul>
+    <li>Computer literacy</li>
+    <li> Microsoft applications</li>
+     Some programming languages like: <br> Javascript, HTML, CSS <br>
+    <li>Use of some technologies like: Renderforest and Corel draw <br>
+    </ul>
+</div>
+</div>
+</div>
+
+<!--Technologies used webpage-->
+<section>
+ <div class="tech" id="tech-used">
+  <h1>Technologies Used to Create this Portfolio</h1> 
+   <div class="Tech">
+  <!--class for html-->
+     <div class="tech1">
+       <h3>HTML</h3>  
+       <p> It is the foundational language used to <span>structure</span>  and organize content on the internet </p>
+       <img src="html.png" alt="icon" id="techs">
+     </div>
+<!--class for css--> 
+<div class="tech2">
+   <h3>CSS</h3>  
+   <p>It is the standard language used to define the
+   <span> visual presentation</span> and layout of web documents.</p>
+   <img src="css.png" alt="icon" id="techs">
+</div>
+
+<!--class for javascript-->
+<div class="tech3">
+  <h3>JavaScript</h3> 
+  <p>This interface is used to create the <span>interractiveness</span>  of the website
+  used to create interactive and dynamic content on the web.</p>
+  <img src="js.png" alt="icon" id="techs">
+  </div>
+</div>
+</section>
+
+
+<!--Footer of the website--> 
+<footer class="Footer" id="contact">
+ <p>For more information about my projects or any inquiries,<br> visit the platforms below:<br>
+ <div class="social-media-icons">
+   <a href="https://github.com/Angel-doc18"><img src="github.png" alt="icon"  id="icon2"></a>
+   <a href="https://medium.com/@ojongchristangel"><img src="medium.png" alt="icon"  id="icon2"></a>
+   <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><img src="email.png" alt="icon"  id="icon2"></a>
+ <p class="copy-right">
+   &copy;Christangel | All Rights Reserved 
+  </p>
+</footer>  
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="main.js"></script>
+</div>
+</body>
 </html>
